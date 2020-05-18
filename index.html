@@ -6,29 +6,59 @@
     </head>
     <body>
         <header>
-            <img src="img/logo" alt="logo">
+            <img src="img/Moon-Moving.gif" alt="logo">
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <a href="/"><li class="active">Home</li></a>
+                    <a href="/about"><li>About</li></a>
+                    <a href="/contact"><li>Contact</li></a>
                 </ul>
             </nav>
         </header>
-        <section id="home-welcome">
-            <div id="nav-pusher"></div>
-            <h1>Hello Web</h1>
-        </section>
-        <section id="home-about">
-            
-        </section>
+        <div class="wrapper">
+            <section id="home-welcome">
+                <div id="nav-pusher"></div>
+                <h1>Hello Web</h1>
+                <p>By some coincidence you've stumbled upon my site. </p>
+                <p>But since that you're here, welcome.</p>
+                <div style="clear: both;"></div>
+            </section>
+            <section id="home-about">
+                <h1>About me</h1>
+                <div class="img-container" style="width:360px; float:right;">
+                    <img src="img/tot.jpg" alt="'Tale of Toast' character" width="100%">
+                    <p>My character from the indie-game, <a href="https://www.taleoftoast.com/"><i>Tale of Toast</i></a></p>
+                </div>
+                <p>Not much to say really, other than I'm currently a student with an interest in technology and software.</p>
+                <p>When not studying, the time is mostly spent gaming, where I usually go by the name <u>Terebinthina</u>.</p>
+                <p>For a full list of games and platforms, <a href="/contact">see my contact page</a>.</p>
+                <div style="clear: both;"></div>
+            </section>
+        </div>
         <footer>
-            <article>
-                <ul>
-                    <h4>Quick Links</h2>
-                    <li><a href="/contact#contact-sgaming">Gaming Connections</a></li>
-                </ul>
-            </article>
+            <section id="footer-links">
+                <article>
+                    <ul>
+                        <h4>Quick Links</h2>
+                        <li><a href="/contact#gaming">Connections</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <h4>School Related</h2>
+                        <li><a href="https://sites.google.com/a/botkyrka.se/bullen-elev/">School Blog</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <h4>Fun links</h2>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Never gonna give you up [𝅘𝅥𝅮 ]</a></li>
+                    </ul>
+                </article>
+            </section>
+            <section id="footer-bottom">
+                <p>Contact me <a href="contact#gaming">while I'm playing</a>, through <a href="/contact#social">social media</a> or alternatively send an email to <a href="mailto:jonas@htv7.net">jonas@htv7.net</a></p>
+            </section>
         </footer>
     </body>
 </html>
