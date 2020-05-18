@@ -3,6 +3,7 @@ body {margin:0; top:0; background-image:url(/img/background.png); background-siz
 h1, p {margin:0;}
 a {text-decoration:none;}
 .no-url {cursor: default;}
+.hide {visibility: hidden;}
 header {
     width: 70%;
     height: 40px;
@@ -12,6 +13,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 header img {
     height: 100%;
@@ -96,7 +98,20 @@ header nav ul a li.active {
 .item-list article {
     width: 30%;
     margin: 1%;
+    position: relative;
     float: left;
+}
+.item-list article ol {
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 5%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+.item-list article ol li {
+    padding: 5px;
 }
 .item-display article {
     flex: 1 1;
