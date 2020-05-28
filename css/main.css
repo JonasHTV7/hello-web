@@ -3,7 +3,8 @@ body {margin:0; top:0; background-image:url(/img/background.png); background-siz
 h1, p {margin:0;}
 a {text-decoration:none;}
 .no-url {cursor: default;}
-.hide {visibility: hidden;}
+.hide {display: none !important;}
+.show {display: block !important;}
 header {
     width: 70%;
     height: 40px;
@@ -67,13 +68,32 @@ header nav ul a li.active {
     display: flex;
     flex-wrap: nowrap;
 }
+.dropdown-active, .section-hidden {
+    text-decoration: underline;
+    color: darkviolet !important;
+}
+.dropdown-button {
+    text-decoration: underline;
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    left: 20;
+}
+.section-visible {
+    text-decoration: underline;
+}
 .item-list article, .item-display article {
     padding-bottom: 10px;
     margin: 0 10px;
     min-width: auto;
+    position: absolute;
     display: inline-block;
     color: black;
     background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.item-list article:hover, .item-display article:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .item-list article img, .item-display article img {
@@ -116,8 +136,8 @@ header nav ul a li.active {
 }
 .item-list article ol {
     min-width: 85%;
-    padding-left: 10%;
-    padding-right: 5%;
+    padding-left: 12.5%;
+    padding-right: 2.5%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -125,6 +145,8 @@ header nav ul a li.active {
 }
 .item-list article ol li {
     padding: 5px;
+    color: black;
+    text-decoration: underline;
 }
 .item-display article {
     flex: 1 1;
@@ -137,6 +159,9 @@ header nav ul a li.active {
 }
 #nav-pusher {
     height: 40px;
+}
+#footer-pusher {
+    height: 200px;
 }
 .wrapper {
     width: 40%;

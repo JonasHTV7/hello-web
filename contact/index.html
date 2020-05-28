@@ -6,6 +6,7 @@
         <meta rel="icon" href="/img/favicon.ico">
         <title>Hello Web</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="/scripts/mainScript.js"></script>
     </head>
     <body>
         <header>
@@ -26,172 +27,179 @@
                 <p>Along with those, there's also my favourite gaming franchises with a list of the games I own from them.</p>
             </section>
             <section id="contact-gaming">
-                <h2>Gaming</h2>
+                <h2 class="section-visible" onclick="sectionCollapse(this)">Gaming Platforms</h2>
                 <div class="container">
                     <ul class="item-list" id="platform-connections">
-                        <a class="platform-name" href="https://www.blizzard.com/" target="blank">
-                            <article id="battle-net">
+                        <article class="platform-name" id="battle-net">
+                            <a href="https://www.blizzard.com/" target="blank">
                                 <img src="/img/blizzard_mini.png" alt="Battle.net - miniature">
-                                <h3>Battle.net</h3>
-                                <p>Terebinthina</p>
-                            </article>
-                        </a>
-                        <a class="platform-name" href="https://www.origin.com/" target="blank">
-                            <article id="origin">
+                            </a>
+                            <h3>Battle.net</h3>
+                            <p>Terebinthina</p>
+                        </article>
+                        <article class="platform-name" id="origin">
+                            <a href="https://www.origin.com/" target="blank">
                                 <img src="/img/origin_mini.jpg" alt="Origin - miniature">
-                                <h3>Origin</h3>
-                                <p>Terebinthina</p>
-                            </article>
-                        </a>
-                        <a class="platform-name" href="https://store.steampowered.com/" target="blank">
-                            <article id="steam">
+                            </a>
+                            <h3>Origin</h3>
+                            <p>Terebinthina</p>
+                        </article>
+                        <article class="platform-name" id="steam">
+                            <a href="https://store.steampowered.com/" target="blank">
                                 <img src="/img/steam_mini.jpg" alt="Steam - miniature">
-                                <h3>Steam</h3>
-                                <p>Terebinthina</p>
-                            </article>
-                        </a>
-                        <a class="platform-name" href="https://www.ubisoft.com/" target="blank">
-                            <article id="ubisoft">
+                            </a>
+                            <h3>Steam</h3>
+                            <p>Terebinthina</p>
+                        </article>
+                        <article class="platform-name" id="ubisoft">
+                            <a href="https://www.ubisoft.com/" target="blank">
                                 <img src="/img/ubisoft_mini.jpg" alt="Ubisoft - miniature">
-                                <h3>Ubisoft</h3>
-                                <p>Terebinthina</p>
-                            </article>
-                        </a>
-                    </ul>
-                    <div style="clear: both;"></div>
-                    <ul class="item-list" id="game-connections">
-                        <a class="game-name" href="https://www.ea.com/games/anthem/" target="blank">
-                            <article id="anthem">
-                                <img src="/img/anthem_mini.jpg" alt="Anthem - miniature">
-                                <h3>Anthem</h3>
-                                <h5><a href="/contact#origin">Origin</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://www.ubisoft.com/sv-se/game/assassins-creed/" target="blank">
-                            <article id="assassins-creed">
-                                <img src="/img/assassins_creed_I_mini.jpg" alt="Assassin's Creed - miniature">
-                                <h3>Assassin's Creed</h3>
-                                <ol class="hide">
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-1/"><li>Assassin's Creed</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-2/"><li>Assassin's Creed II</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-brotherhood/"><li>Assassin's Creed Brotherhood</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-revelations/"><li>Assassin's Creed Revelations</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-3/"><li>Assassin's Creed III</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-4-black-flag/"><li>Assassin's Creed IV Black Flag</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-unity/"><li>Assassin's Creed Unity</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-syndicate/"><li>Assassin's Creed Syndicate</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-origins/"><li>Assassin's Creed Origins</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-odyssey/"><li>Assassin's Creed Odyssey</li></a>
-                                    <a href="https://www.ubisoft.com/en-gb/game/assassins-creed/valhalla"><li>Assassin's Creed Valhalla</li></a>
-                                </ol>
-                                <h5><a href="/contact#ubisoft">Ubisoft</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://store.steampowered.com/franchise/bioshock">
-                            <article id="bioshock">
-                                <img src="/img/bioshock_mini.jpg" alt="Bioschok - miniature">
-                                <h3>Bioshock</h3>
-                                <ol class="hide">
-                                    <a href="https://store.steampowered.com/app/409710/BioShock_Remastered/"><li>Bioshock</li></a>
-                                    <a href="https://store.steampowered.com/app/409720/BioShock_2_Remastered/"><li>Bioshock 2</li></a>
-                                    <a href="https://store.steampowered.com/app/8870/BioShock_Infinite/"><li>Bioshock Infinite</li></a>
-                                </ol>
-                                <h5><a href="/contact#steam">Steam</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://www.paradoxplaza.com/cities-skylines/">
-                            <article id="cities-skylines">
-                                <img src="/img/cities_skylines_mini.jpg" alt="Cities: Skylines - miniature">
-                                <h3>Cities: Skylines</h3>
-                                <h5><a class="no-url">Paradox Plaza</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://www.bungie.net/">
-                            <article id="destiny-2">
-                                <img src="/img/destiny_2_mini.png" alt="Destiny 2 - miniature">
-                                <h3>Destiny 2</h3>
-                                <h5><a href="/contact#steam">Steam</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://lifeisstrange.square-enix-games.com/">
-                            <article id="life-is-strange">
-                                <img src="/img/life_is_strange_mini.jpg" alt="Life is Strange - miniature">
-                                <h3>Life is Strange</h3>
-                                <ol class="hide">
-                                    <a href="https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange"><li>Life is Strange</li></a>
-                                    <a href="https://lifeisstrange.square-enix-games.com/en-us/games/before-the-storm"><li>Life is Strange: Before the Storm</li></a>
-                                    <a href="https://lifeisstrange.square-enix-games.com/en-us/games/captain-spirit"><li>The Awesome Adventures of Captain Spirit</li></a>
-                                    <a href="https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange-2"><li>Life is Strange 2</li></a>
-                                </ol>
-                                <h5><a href="/contact#steam">Steam</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://playoverwatch.com/">
-                            <article id="overwatch">
-                                <img src="/img/overwatch_2_mini.jpg" alt="Overwatch - miniature">
-                                <h3>Overwatch</h3>
-                                <h5><a href="/contact#battle-net">Battle.net</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://store.steampowered.com/app/400/Portal/">
-                            <article id="portal">
-                                <img src="/img/portal_mini.jpg" alt="Portal - miniature">
-                                <h3>Portal</h3>
-                                <ol class="hide">
-                                    <a href="https://store.steampowered.com/app/400/Portal/"><li>Portal</li></a>
-                                    <a href="https://store.steampowered.com/app/620/Portal_2/"><li>Portal 2</li></a>
-                                </ol>
-                                <h5><a href="/contact#steam">Steam</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://store.steampowered.com/curator/35801496">
-                            <article id="tomb-raider">
-                                <img src="/img/tomb_raider_mini.jpg" alt="Tomb Raider - miniature">
-                                <h3>Tomb Raider</h3>
-                                <ol class="hide">
-                                    <a href="https://store.steampowered.com/app/203160/Tomb_Raider/"><li>Tomb Raider</li></a>
-                                    <a href="https://store.steampowered.com/app/391220/Rise_of_the_Tomb_Raider/"><li>Rise of the Tomb Raider</li></a>
-                                    <a href="https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider_Definitive_Edition/"><li>Shadow of the Tomb Raider</li></a>
-                                </ol>
-                                <h5><a href="/contact#steam">Steam</a></h5>
-                            </article>
-                        </a>
-                        <a class="game-name" href="https://www.ubisoft.com/en-us/game/watch-dogs/">
-                            <article id="watch-dogs">
-                                <img src="/img/watch_dogs_mini.jpg" alt="Watch_Dogs - miniature">
-                                <h3>Watch_Dogs</h3>
-                                <ol class="hide">
-                                    <a href="https://www.ubisoft.com/en-us/game/watch-dogs/"><li>Watch_Dogs</li></a>
-                                    <a href="https://www.ubisoft.com/en-us/game/watch-dogs-2/"><li>Watch_Dogs 2</li></a>
-                                </ol>
-                                <h5><a href="/contact#ubisoft">Ubisoft</a></h5>
-                            </article>
-                        </a>
-                    </ul>
-                    <div style="clear: both;"></div>
-            </section>
-            <section id="contact-social">
-                <h2>Social Connections</h2>
-                <div class="container">
-                    <ul class="item-list" id="platform-connections">
-                        <a class="platform-name" href="https://anilist.co/">
-                            <article id="anilist">
-                                <img src="/img/anilist_mini.png" alt="AniList - miniature">
-                                <h3>AniList</h3>
-                                <p>Terebinthina</p>
-                            </article>
-                        </a>
-                        <a class="platform-name" href="https://discord.com/">
-                            <article id="discord">
-                                <img src="/img/discord_mini.png" alt="Discord - miniature">
-                                <h3>Discord</h3>
-                                <p>Terebinthina</p>
-                            </article>
-                        </a>
+                            </a>
+                            <h3>Ubisoft</h3>
+                            <p>Terebinthina</p>
+                        </article>
                     </ul>
                     <div style="clear: both;"></div>
                 </div>
             </section>
+            <section id="contact-games">
+                <h2 class="section-visible" onclick="sectionCollapse(this)">Games I play</h2>
+                <div class="container">
+                    <ul class="item-list" id="game-connections">
+                        <article class="game-name" id="anthem">
+                            <a href="https://www.ea.com/games/anthem/" target="blank">
+                                <img src="/img/anthem_mini.jpg" alt="Anthem - miniature">
+                            </a>
+                            <h3>Anthem</h3>
+                            <h5><a href="/contact#origin">Origin</a></h5>
+                        </article>
+                        <article class="game-name" id="assassins-creed">
+                            <a href="https://www.ubisoft.com/sv-se/game/assassins-creed/" target="blank">
+                                <img src="/img/assassins_creed_I_mini.jpg" alt="Assassin's Creed - miniature">
+                            </a>
+                            <h3 class="dropdown-button" onclick="dropdown(this)">Assassin's Creed</h3>
+                            <ol class="dropdown-content">
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-1/"><li>Assassin's Creed</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-2/"><li>Assassin's Creed II</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-brotherhood/"><li>Assassin's Creed Brotherhood</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-revelations/"><li>Assassin's Creed Revelations</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-3/"><li>Assassin's Creed III</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-4-black-flag/"><li>Assassin's Creed IV Black Flag</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-unity/"><li>Assassin's Creed Unity</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-syndicate/"><li>Assassin's Creed Syndicate</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-origins/"><li>Assassin's Creed Origins</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-odyssey/"><li>Assassin's Creed Odyssey</li></a>
+                                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed/valhalla"><li>Assassin's Creed Valhalla</li></a>
+                            </ol>
+                            <h5><a href="/contact#ubisoft">Ubisoft</a></h5>
+                        </article>
+                        <article class="game-name" id="bioshock">
+                            <a href="https://store.steampowered.com/franchise/bioshock">
+                                <img src="/img/bioshock_mini.jpg" alt="Bioschok - miniature">
+                            </a>
+                            <h3 class="dropdown-button" onclick="dropdown(this)">Bioshock</h3>
+                            <ol class="dropdown-content">
+                                <a href="https://store.steampowered.com/app/409710/BioShock_Remastered/"><li>Bioshock</li></a>
+                                <a href="https://store.steampowered.com/app/409720/BioShock_2_Remastered/"><li>Bioshock 2</li></a>
+                                <a href="https://store.steampowered.com/app/8870/BioShock_Infinite/"><li>Bioshock Infinite</li></a>
+                            </ol>
+                            <h5><a href="/contact#steam">Steam</a></h5>
+                        </article>
+                        <article class="game-name" id="cities-skylines">
+                            <a href="https://www.paradoxplaza.com/cities-skylines/">
+                                <img src="/img/cities_skylines_mini.jpg" alt="Cities: Skylines - miniature">
+                            </a>
+                            <h3>Cities: Skylines</h3>
+                            <h5><a class="no-url">Paradox Plaza</a></h5>
+                        </article>
+                        <article class="game-name" id="destiny-2">
+                            <a href="https://www.bungie.net/">
+                                <img src="/img/destiny_2_mini.png" alt="Destiny 2 - miniature">
+                            </a>
+                            <h3>Destiny 2</h3>
+                            <h5><a href="/contact#steam">Steam</a></h5>
+                        </article>
+                        <article class="game-name" id="life-is-strange">
+                            <a href="https://lifeisstrange.square-enix-games.com/">
+                                <img src="/img/life_is_strange_mini.jpg" alt="Life is Strange - miniature">
+                            </a>
+                            <h3 class="dropdown-button" onclick="dropdown(this)">Life is Strange</h3>
+                            <ol class="dropdown-content">
+                                <a href="https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange"><li>Life is Strange</li></a>
+                                <a href="https://lifeisstrange.square-enix-games.com/en-us/games/before-the-storm"><li>Life is Strange: Before the Storm</li></a>
+                                <a href="https://lifeisstrange.square-enix-games.com/en-us/games/captain-spirit"><li>The Awesome Adventures of Captain Spirit</li></a>
+                                <a href="https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange-2"><li>Life is Strange 2</li></a>
+                            </ol>
+                            <h5><a href="/contact#steam">Steam</a></h5>
+                        </article>
+                        <article class="game-name" id="overwatch">
+                            <a href="https://playoverwatch.com/">
+                                <img src="/img/overwatch_2_mini.jpg" alt="Overwatch - miniature">
+                            </a>
+                            <h3>Overwatch</h3>
+                            <h5><a href="/contact#battle-net">Battle.net</a></h5>
+                        </article>
+                        <article class="game-name" id="portal">
+                            <a href="https://store.steampowered.com/app/400/Portal/">
+                                <img src="/img/portal_mini.jpg" alt="Portal - miniature">
+                            </a>
+                            <h3 class="dropdown-button" onclick="dropdown(this)">Portal</h3>
+                            <ol class="dropdown-content">
+                                <a href="https://store.steampowered.com/app/400/Portal/"><li>Portal</li></a>
+                                <a href="https://store.steampowered.com/app/620/Portal_2/"><li>Portal 2</li></a>
+                            </ol>
+                            <h5><a href="/contact#steam">Steam</a></h5>
+                        </article>
+                        <article class="game-name" id="tomb-raider">
+                            <a href="https://store.steampowered.com/curator/35801496">
+                                <img src="/img/tomb_raider_mini.jpg" alt="Tomb Raider - miniature">
+                            </a>
+                            <h3 class="dropdown-button" onclick="dropdown(this)">Tomb Raider</h3>
+                            <ol class="dropdown-content">
+                                <a href="https://store.steampowered.com/app/203160/Tomb_Raider/"><li>Tomb Raider</li></a>
+                                <a href="https://store.steampowered.com/app/391220/Rise_of_the_Tomb_Raider/"><li>Rise of the Tomb Raider</li></a>
+                                <a href="https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider_Definitive_Edition/"><li>Shadow of the Tomb Raider</li></a>
+                            </ol>
+                            <h5><a href="/contact#steam">Steam</a></h5>
+                        </article>
+                        <article class="game-name" id="watch-dogs">
+                            <a href="https://www.ubisoft.com/en-us/game/watch-dogs/">
+                                <img src="/img/watch_dogs_mini.jpg" alt="Watch_Dogs - miniature">
+                            </a>
+                            <h3 class="dropdown-button" onclick="dropdown(this)">Watch_Dogs</h3>
+                            <ol class="dropdown-content">
+                                <a href="https://www.ubisoft.com/en-us/game/watch-dogs/"><li>Watch_Dogs</li></a>
+                                <a href="https://www.ubisoft.com/en-us/game/watch-dogs-2/"><li>Watch_Dogs 2</li></a>
+                            </ol>
+                            <h5><a href="/contact#ubisoft">Ubisoft</a></h5>
+                        </article>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+            </section>
+            <section id="contact-social">
+                <h2 class="section-visible" onclick="sectionCollapse(this)">Social Connections</h2>
+                <div class="container">
+                    <ul class="item-list" id="platform-connections">
+                        <article id="anilist">
+                            <a class="platform-name" href="https://anilist.co/">
+                                <img src="/img/anilist_mini.png" alt="AniList - miniature">
+                            </a>
+                            <h3 onclick="dropdown(this)">AniList</h3>
+                            <p>Terebinthina</p>
+                        </article>
+                        <article id="discord">
+                            <a class="platform-name" href="https://discord.com/">
+                                <img src="/img/discord_mini.png" alt="Discord - miniature">
+                            </a>
+                            <h3 onclick="dropdown(this)">Discord</h3>
+                            <p>Terebinthina</p>
+                        </article>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+            </section>
+            <div id="footer-pusher"></div>
         </div>
         <footer>
             <section id="footer-links">
